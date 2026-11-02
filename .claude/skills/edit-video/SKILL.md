@@ -7,6 +7,13 @@ description: Use whenever the user drops or names a video file, or says edit, cu
 
 Never start rendering until the questions below are answered. Ask, confirm the plan, then edit.
 
+## Batches (several videos at once)
+- Triggers: several files dropped in one message, or "edit everything in inbox" / "do the inbox".
+- Copy them all into `inbox/` (files already in `inbox/` stay put). List them in one line with their lengths.
+- Ask the questions ONCE for the whole batch. Add one more option to the first question: "Different settings per clip" — only then ask per clip.
+- Hand the whole batch to ONE `video-editor` call (it processes clips one after another), not one call per clip.
+- Finish with one table: clip · output file(s) · length · notes.
+
 ## 1. Take in the file
 - Copy each dropped file into `inbox/` (keep the original where it was). Name: lower-case, no spaces.
 - Get basics with one quiet command, nothing else read:
