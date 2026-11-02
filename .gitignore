@@ -1,0 +1,12 @@
+inbox/*
+work/*
+exports/*
+archive/*
+!*/.keep
+*.mp4
+*.mov
+*.m4a
+*.wav
+__pycache__/
+studio-defaults.json
+.DS_Store

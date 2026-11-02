@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ffmpeg:*)",
+      "Bash(ffprobe:*)",
+      "Bash(python3 .claude/skills/content-cloner/scripts/analyze.py:*)",
+      "Bash(python3 .claude/skills/content-cloner/scripts/apply_edit.py:*)",
+      "Bash(python3 tools/cleanup.py:*)",
+      "Bash(cp:*)",
+      "Bash(ls:*)"
+    ]
+  }
+}
